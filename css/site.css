@@ -7,7 +7,35 @@ html {
       font-size: 16px;
     }
   }
-  
+
+  @media (max-width: 430px) {
+    .navbar-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .project-container {
+        flex-wrap: wrap;
+        gap: 1rem !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cert-container {
+        flex-wrap: wrap;
+        gap: 1rem !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .snap-container {
+      scroll-snap-type: none !important;
+    }
+  }
+
+
   /* .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
   } */
@@ -50,7 +78,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 35px;
-    height: 50px;
+    min-height: 70px;
   }
   
   .nav-link {
@@ -70,10 +98,6 @@ html {
     height: 24px;
     width: 24px;
     object-fit: contain;
-  }
-  
-  .custom-navbar {
-    height: 70px;
   }
   
   .linkStyle {
@@ -116,7 +140,7 @@ html {
   
   .snap-section {
     scroll-snap-align: start;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +161,8 @@ html {
   .project-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 7rem;
   }
   
   .usaktslogo {
@@ -153,7 +178,8 @@ html {
   .cert-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10rem;
   }
   
   .text-cert {
@@ -174,7 +200,7 @@ html {
     border: 1px solid rgba(40, 40, 40, 0.7);
     box-shadow: rgba(176, 176, 191, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(178, 188, 197, 0.35) 0px -2px 6px 0px inset;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-radius: 20px;
     flex-direction: column;
