@@ -46,3 +46,18 @@ document.getElementById("downloadCert2").addEventListener("click", function (e) 
         window.open('/images/Microsoft.pdf', '_blank');
     });
 });
+
+document.getElementById("downloadCert3").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Show a SweetAlert2 notification
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Downloading certification...',
+        showConfirmButton: false,
+        timer: 1500
+    }).then(() => {
+        window.open('/images/c-object-oriented-programming-oop.pdf', '_blank');
+    });
+});
